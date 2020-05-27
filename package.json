@@ -1,0 +1,27 @@
+{
+  "name": "vivo",
+  "version": "1.0.0",
+  "description": "viv 商城仿写",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhou160/vivo.git"
+  },
+  "author": "zhouting",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhou160/vivo/issues"
+  },
+  "homepage": "https://github.com/zhou160/vivo#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

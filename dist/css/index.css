@@ -1,0 +1,28 @@
+header .headTop {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 30px;
+  line-height: 30px; }
+  header .headTop ul li {
+    float: left;
+    margin-left: 30px; }
+  header .headTop a {
+    color: white; }
+
+header .headBot {
+  display: flex;
+  justify-content: space-around;
+  line-height: 70px;
+  background-color: #f7f7f5; }
+  header .headBot span:first-child {
+    font-size: 22px;
+    font-weight: bold; }
+  header .headBot ul {
+    display: flex; }
+    header .headBot ul li {
+      margin-right: 34px; }
+    header .headBot ul li:last-child {
+      margin-right: 0px; }
+    header .headBot ul a {
+      font-size: 18px; }

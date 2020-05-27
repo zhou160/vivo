@@ -1,0 +1,42 @@
+header{
+	.headTop{
+		display: flex;
+		justify-content: space-between;
+		background-color: black;
+		height: 30px;
+		line-height: 30px;
+		ul li{
+			float: left;
+			margin-left: 30px;
+		}
+		a{
+			color: white;
+		}
+	}
+	.headBot{
+		display: flex;
+		justify-content: space-around;
+		line-height: 70px;
+		background-color: #f7f7f5;
+		span:first-child{
+			font-size: 22px;
+			font-weight: bold;
+		}
+		ul{
+			display: flex;
+			li{
+				margin-right: 34px;
+			}
+			li:last-child{
+				margin-right: 0px;
+			}
+			a{
+				font-size: 18px;
+			}
+		}
+	}
+}
+.banner{
+	
+}
+
