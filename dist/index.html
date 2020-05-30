@@ -5,6 +5,7 @@
 		<title>首页</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1853168_gwg8bbpf22b.css"/>
 	</head>
 	<body>
 		<!-- 头部列表 -->
@@ -38,20 +39,76 @@
 					<li><a href="">商城</a></li>
 					<li><a href="">服务</a></li>
 				</ul>
-				<span>搜索框</span>
+				<span class="iconfont icon-search"></span>
 			</div>
 		</header>
 		<!-- banner区域 -->
 		<section class="banner">
-			<nav>
-				<li><a href=""><span>手机</span><span>&gt;</span></a></li>
-				<li><a href=""><span>手机充电</span><span>&gt;</span></a></li>
-				<li><a href=""><span>手机配件</span><span>&gt;</span></a></li>
-				<li><a href=""><span>音乐设备</span><span>&gt;</span></a></li>
-				<li><a href=""><span>智能硬件</span><span>&gt;</span></a></li>
-				<li><a href=""><span>游戏摄影</span><span>&gt;</span></a></li>
-				<li><a href=""><span>日用出行</span><span>&gt;</span></a></li>
-			</nav>
+			<!-- 轮播图区域 -->
+			<ul class="bannerImage">
+				<li><img src="images/banner1.jpg" alt="banner1" class="active"></li>
+				<li><img src="images/banner2.jpg" alt="banner2"></li>
+				<li><img src="images/banner3.jpg" alt="banner3"></li>
+				<li><img src="images/banner4.png" alt="banner4"></li>
+				<li><img src="images/banner5.png" alt="banner5"></li>
+				<li><img src="images/banner1.jpg" alt="banner1"></li>
+			</ul>
+			<ol>
+				<li class="active"><span class="anima1"></span></li>
+				<li><span></span></li>
+				<li><span></span></li>
+				<li><span></span></li>
+				<li><span></span></li>
+			</ol>
+			<div class="bannerList">
+				<nav>
+					<li><a href=""><span>手机</span><span>&gt;</span></a></li>
+					<li><a href=""><span>手机充电</span><span>&gt;</span></a></li>
+					<li><a href=""><span>手机配件</span><span>&gt;</span></a></li>
+					<li><a href=""><span>音乐设备</span><span>&gt;</span></a></li>
+					<li><a href=""><span>智能硬件</span><span>&gt;</span></a></li>
+					<li><a href=""><span>游戏摄影</span><span>&gt;</span></a></li>
+					<li><a href=""><span>日用出行</span><span>&gt;</span></a></li>
+				</nav>
+				<!-- 列表左边内容 -->
+				<aside>
+					<!-- 头部标题 -->
+					<header>
+						<span>手机</span>
+						<span>全部手机&gt;</span>
+					</header>
+					<!-- 分类 -->
+					<ul class="classList1">
+						<li>617预告<span></span></li>
+						<li>618预告<span></span></li>
+						<li>618预告<span></span></li>
+						<li>618预告<span></span></li>
+						<li>618预告<span></span></li>
+						<li>618预告<span></span></li>
+						<li>618预告<span></span></li>
+						<li>618预告<span></span></li>
+					</ul>
+					<ul class="classList2">
+						<li><img src="../images/back3.jpg">IQOO Z1</li>
+						<li><img src="../images/back3.jpg">文本测试</li>
+						<li><img src="../images/back3.jpg">文本测试</li>
+						<li><img src="../images/back3.jpg">文本测试</li>
+						<li><img src="../images/back3.jpg">文本测试</li>
+						<li><img src="../images/back3.jpg">文本测试</li>
+					</ul>
+				</aside>
+			</div>
 		</section>
+		
+		
+		<!-- 右侧列表 -->
+		<div class="right">
+			<i class="iconfont icon-gouwuche"></i>
+			<i class="iconfont icon-kefu"></i>
+			<i class="iconfont icon-bangzhu"></i>
+		</div>
+		
+		
+		<script src="js/require.js" async="true" defer data-main="js/indexMain"></script>
 	</body>
 </html>

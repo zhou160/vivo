@@ -26,3 +26,137 @@ header .headBot {
       margin-right: 0px; }
     header .headBot ul a {
       font-size: 18px; }
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden; }
+  .banner .bannerImage img {
+    height: 520px;
+    position: absolute;
+    left: -682px;
+    opacity: 0;
+    transition: 1.5s;
+    z-index: 0; }
+  .banner .bannerImage .active {
+    z-index: 5;
+    opacity: 1; }
+  .banner ol {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+    width: 250px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10; }
+    .banner ol li {
+      width: 40px;
+      height: 2px;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin-left: 10px; }
+      .banner ol li span {
+        display: none;
+        height: 5px;
+        background-color: white;
+        position: absolute; }
+      .banner ol li .anima1 {
+        display: inline-block;
+        animation: btn 5s; }
+    .banner ol .active {
+      height: 5px; }
+  .banner .bannerList nav {
+    padding: 35px 0px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    z-index: 10; }
+    .banner .bannerList nav li {
+      width: 200px; }
+      .banner .bannerList nav li a {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 30px 18px 43px; }
+      .banner .bannerList nav li :hover {
+        background-color: white; }
+  .banner .bannerList aside {
+    position: absolute;
+    top: 20px;
+    left: 280px;
+    background-color: white;
+    width: 750px;
+    height: 420px;
+    display: none;
+    z-index: 10;
+    box-sizing: content-box;
+    padding: 17px 50px 47px 17px; }
+    .banner .bannerList aside header {
+      display: flex;
+      justify-content: space-between;
+      line-height: 38px; }
+      .banner .bannerList aside header span:last-child {
+        font-size: 12px;
+        color: #999999; }
+    .banner .bannerList aside .classList1 {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 18px; }
+      .banner .bannerList aside .classList1 li {
+        width: 100px;
+        border-radius: 10px;
+        margin-top: 11px;
+        background: url(../images/back1.jpg) no-repeat;
+        background-size: 160px 50px;
+        text-align: right;
+        line-height: 50px;
+        box-sizing: content-box;
+        padding-right: 60px;
+        position: relative; }
+        .banner .bannerList aside .classList1 li span {
+          display: none;
+          width: 160px;
+          height: 50px;
+          background-color: rgba(0, 0, 0, 0.1);
+          position: absolute;
+          left: 0;
+          top: 0;
+          border-radius: 10px; }
+    .banner .bannerList aside .classList2 {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 26px; }
+      .banner .bannerList aside .classList2 li {
+        min-width: 200px;
+        margin-bottom: 20px;
+        height: 45px; }
+        .banner .bannerList aside .classList2 li img {
+          height: 45px;
+          margin-right: 10px; }
+
+.right {
+  width: 50px;
+  height: 150px;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  bottom: 100px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+  .right i {
+    text-align: center;
+    width: 50px;
+    font-size: 25px !important; }
+
+@keyframes btn {
+  0% {
+    width: 0px; }
+  100% {
+    width: 40px; } }

@@ -37,6 +37,177 @@ header{
 	}
 }
 .banner{
-	
+	position: relative;
+	width: 100%;
+	height: 520px;
+	overflow: hidden;
+	.bannerImage{
+		img{
+			height: 520px;
+			position: absolute;
+			left: -682px;
+			opacity: 0;
+			transition: 1.5s;
+			z-index: 0;
+		}
+		.active{
+			z-index: 5;
+			opacity: 1;
+		}
+	}
+	ol{
+		position: absolute;
+		bottom: 20px;
+		display: flex;
+		align-items: flex-end;
+		width: 250px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		z-index: 10;
+		li{
+			width: 40px;
+			height: 2px;
+			background-color: rgba(255,255,255,0.5);
+			margin-left: 10px;
+			span{
+				display: none;
+				height: 5px;
+				background-color: white;
+				position: absolute;
+			}
+			.anima1{
+				display: inline-block;
+				animation: btn 5s;
+			}
+		}
+		.active{
+			height: 5px;
+		}
+	}
+	.bannerList{
+		nav{
+			padding:35px 0px;
+			background-color: rgba(255,255,255,0.7);
+			position: absolute;
+			top: 20px;
+			left: 70px;
+			z-index: 10;
+			li{
+				width: 200px;
+				a{
+					display: flex;
+					justify-content: space-between;
+					padding: 25px 30px 18px 43px;
+				}
+				:hover{
+					background-color: white;
+				}
+			}
+		}
+		aside{
+			position: absolute;
+			top: 20px;
+			left: 280px;
+			background-color: white;
+			width: 750px;
+			height: 420px;
+			display: none;
+			z-index: 10;
+			box-sizing: content-box;
+			padding: 17px 50px 47px 17px;
+			header{
+				display: flex;
+				justify-content: space-between;
+				line-height: 38px;
+				span:last-child{
+					font-size: 12px;
+					color: #999999;
+				}
+				}
+				.classList1{
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					border-bottom: 1px solid #ccc;
+					padding-bottom: 18px;
+					li{
+						
+						width: 100px;
+						border-radius: 10px;
+						// height: 50px;
+						margin-top: 11px;
+						background: url(../images/back1.jpg) no-repeat;
+						background-size:160px 50px;
+						text-align: right;
+						line-height: 50px;
+						box-sizing: content-box;
+						padding-right: 60px;
+						position: relative;
+						span{
+							display: none;
+							width: 160px;
+							height: 50px;
+							background-color: rgba(0,0,0,0.1);
+							position: absolute;
+							left: 0;
+							top: 0;
+							border-radius: 10px;
+						}
+						// :hover span{
+						// 	display: inline-block;
+						// }
+						// :hover{
+						// 	display: none;
+						// }
+					}
+			}
+			.classList2{
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				padding-top: 26px;
+				li{
+					min-width: 200px;
+					// background-color: red;
+					margin-bottom: 20px;
+					height: 45px;
+					img{
+						height: 45px;
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.right{
+	width: 50px;
+	height: 150px;
+	background-color: white;
+	position: fixed;
+	right: 0;
+	bottom: 100px;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	i{
+		text-align: center;
+		width: 50px;
+		font-size: 25px !important;
+	}
+}
+
+//动画效果
+@keyframes btn{
+	0%{
+		width: 0px;
+	}
+	100%{
+		width: 40px;
+	}
 }
 
