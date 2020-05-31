@@ -41,6 +41,12 @@ gulp.task("scss",function (){
 	.pipe(connect.reload())//这里是用于后面监听和服务器的时候自动刷新
 })
 
+//拷贝minix文件
+gulp.task("mixin",function (){
+	return gulp.src("stylesheet/_mixin.scss")
+	.pipe(gulp.dest("dist/css"))
+})
+
 //拷贝图片
 gulp.task("images",function (){
 	return gulp.src("images/*.{jpg,png}")

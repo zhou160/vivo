@@ -1,3 +1,27 @@
+html, body, ol, ul, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, form, input, select, textarea, table, td, tr, th, fieldset {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 12px; }
+
+fieldset, img {
+  border: none; }
+
+h1, h2, h3, h4, h5, h6, b, strong, i, em, u {
+  font-weight: normal;
+  font-style: normal; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+img {
+  vertical-align: middle; }
+
 header .headTop {
   display: flex;
   justify-content: space-between;
@@ -139,6 +163,313 @@ header .headBot {
           height: 45px;
           margin-right: 10px; }
 
+.content {
+  background-color: #f7f7f5;
+  height: 3000px;
+  position: relative; }
+  .content .content1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1200px;
+    margin-top: 10px;
+    height: 140px;
+    display: flex;
+    justify-content: space-between; }
+    .content .content1 li a {
+      display: block;
+      width: 290px;
+      height: 140px;
+      background: url(../images/content1-1.jpg);
+      background-size: 100%; }
+    .content .content1 li :hover {
+      box-shadow: 5px 5px 5px #e3e3e1; }
+  .content .content2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1200px;
+    top: 140px;
+    height: 495px;
+    padding-top: 40px; }
+    .content .content2 .head {
+      padding: 25px 0px;
+      background: url(../images/v-qiang.png) no-repeat 10px;
+      background-size: auto 30px;
+      padding-left: 100px;
+      line-height: 30px;
+      display: flex;
+      justify-content: space-between;
+      color: #999; }
+      .content .content2 .head a {
+        color: #999; }
+      .content .content2 .head i {
+        display: inline-block;
+        width: 40px;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        background-color: red;
+        margin: 0px 10px; }
+    .content .content2 .content2Left {
+      width: 35px;
+      height: 35px;
+      border-radius: 35px;
+      border: 2px solid #a5a5a5;
+      text-align: center;
+      line-height: 35px;
+      font-size: 16px;
+      color: #a5a5a5;
+      font-weight: bold;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+      left: -50px; }
+    .content .content2 .content2Right {
+      width: 35px;
+      height: 35px;
+      border-radius: 35px;
+      border: 2px solid #a5a5a5;
+      text-align: center;
+      line-height: 35px;
+      font-size: 16px;
+      color: #a5a5a5;
+      font-weight: bold;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+      right: -50px; }
+    .content .content2 .box {
+      width: 1200px;
+      overflow: hidden; }
+      .content .content2 .box .content2List {
+        width: 2690px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 0;
+        left: 0; }
+        .content .content2 .box .content2List li {
+          box-sizing: content-box;
+          width: 250px;
+          height: 265px;
+          background-color: white;
+          position: relative;
+          padding: 60px 20px 55px; }
+          .content .content2 .box .content2List li .img1 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 135px;
+            padding-bottom: 30px; }
+          .content .content2 .box .content2List li .img2 {
+            position: absolute;
+            top: 40px;
+            right: 70px;
+            height: 50px; }
+          .content .content2 .box .content2List li div {
+            position: absolute;
+            bottom: 55px; }
+            .content .content2 .box .content2List li div p {
+              width: 250px;
+              line-height: 35px;
+              font-size: 18px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis; }
+            .content .content2 .box .content2List li div span {
+              display: block;
+              width: 250px;
+              text-align: center;
+              font-size: 12px;
+              line-height: 30px; }
+            .content .content2 .box .content2List li div b {
+              display: block;
+              width: 250px;
+              color: red;
+              height: 30px;
+              text-align: center; }
+              .content .content2 .box .content2List li div b i:first-child {
+                font-size: 14px;
+                font-weight: bold; }
+              .content .content2 .box .content2List li div b i:nth-child(2) {
+                font-size: 20px;
+                font-weight: bold; }
+              .content .content2 .box .content2List li div b i:last-child {
+                font-size: 12px;
+                color: #b7b7b7;
+                font-size: 14px;
+                text-decoration: line-through; }
+  .content .content3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1200px;
+    top: 670px; }
+    .content .content3 .head {
+      text-align: center;
+      font-size: 20px;
+      line-height: 75px; }
+    .content .content3 ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .content .content3 ul li {
+        width: 390px;
+        height: 430px;
+        background-color: white;
+        padding-top: 80px;
+        position: relative; }
+        .content .content3 ul li img {
+          height: 185px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto; }
+        .content .content3 ul li div {
+          position: absolute;
+          bottom: 65px;
+          text-align: center; }
+          .content .content3 ul li div p {
+            width: 395px;
+            line-height: 34px;
+            font-size: 20px; }
+          .content .content3 ul li div span {
+            display: block;
+            line-height: 32px;
+            font-size: 12px; }
+          .content .content3 ul li div b {
+            display: block;
+            line-height: 68px;
+            font-size: 20px;
+            color: red;
+            font-weight: bold; }
+            .content .content3 ul li div b i {
+              font-size: 14px; }
+      .content .content3 ul li:hover {
+        box-shadow: -4px 22px 20px #e3e3e1; }
+  .content .content4 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1200px;
+    top: 1270px; }
+    .content .content4 .head {
+      text-align: center;
+      font-size: 20px;
+      line-height: 75px; }
+    .content .content4 .content4List {
+      display: flex;
+      justify-content: space-between;
+      align-content: space-between;
+      flex-wrap: wrap;
+      height: 770px; }
+      .content .content4 .content4List li {
+        width: 290px;
+        height: 320px;
+        background-color: white;
+        padding-top: 60px;
+        position: relative; }
+        .content .content4 .content4List li img {
+          height: 140px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto; }
+        .content .content4 .content4List li div {
+          position: absolute;
+          bottom: 40px;
+          text-align: center; }
+          .content .content4 .content4List li div p {
+            width: 290px;
+            line-height: 30px;
+            font-size: 20px; }
+          .content .content4 .content4List li div span {
+            display: block;
+            line-height: 27px;
+            font-size: 12px; }
+          .content .content4 .content4List li div b {
+            display: block;
+            line-height: 50px;
+            font-size: 20px;
+            color: red;
+            font-weight: bold; }
+            .content .content4 .content4List li div b i {
+              font-size: 14px; }
+      .content .content4 .content4List li:first-child {
+        width: 590px;
+        background: url(../images/zq1.jpg) no-repeat;
+        background-size: auto 380px; }
+      .content .content4 .content4List li:hover {
+        box-shadow: -4px 22px 20px #e3e3e1; }
+  .content .content5 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1200px;
+    top: 2110px; }
+    .content .content5 .head {
+      padding-left: 550px;
+      font-size: 20px;
+      line-height: 75px; }
+      .content .content5 .head p {
+        float: right;
+        font-size: 14px;
+        width: 270px;
+        display: flex;
+        justify-content: space-between; }
+    .content .content5 .content5List {
+      display: flex;
+      justify-content: space-between;
+      align-content: space-between;
+      flex-wrap: wrap;
+      height: 770px; }
+      .content .content5 .content5List li {
+        width: 290px;
+        height: 320px;
+        background-color: white;
+        padding-top: 60px;
+        position: relative; }
+        .content .content5 .content5List li img {
+          height: 140px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto; }
+        .content .content5 .content5List li div {
+          position: absolute;
+          bottom: 40px;
+          text-align: center; }
+          .content .content5 .content5List li div p {
+            width: 290px;
+            line-height: 30px;
+            font-size: 20px; }
+          .content .content5 .content5List li div span {
+            display: block;
+            line-height: 27px;
+            font-size: 12px; }
+          .content .content5 .content5List li div b {
+            display: block;
+            line-height: 50px;
+            font-size: 20px;
+            color: red;
+            font-weight: bold; }
+            .content .content5 .content5List li div b i {
+              font-size: 14px; }
+      .content .content5 .content5List li:hover {
+        box-shadow: -4px 22px 20px #e3e3e1; }
+
 .right {
   width: 50px;
   height: 150px;
@@ -149,11 +480,65 @@ header .headBot {
   z-index: 100;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap; }
-  .right i {
-    text-align: center;
-    width: 50px;
-    font-size: 25px !important; }
+  .right a {
+    display: block;
+    width: 27px; }
+    .right a i {
+      font-size: 25px !important; }
+
+footer .footContent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1200px; }
+  footer .footContent .footList1 {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc; }
+    footer .footContent .footList1 li {
+      line-height: 85px;
+      color: black; }
+      footer .footContent .footList1 li i {
+        margin-right: 5px; }
+  footer .footContent .footList2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px 70px;
+    border-bottom: 1px solid #ccc; }
+    footer .footContent .footList2 dt {
+      line-height: 100px;
+      color: #333333; }
+    footer .footContent .footList2 dd {
+      font-size: 12px;
+      line-height: 35px;
+      color: #666666; }
+    footer .footContent .footList2 dl:last-child dt {
+      font-size: 22px; }
+      footer .footContent .footList2 dl:last-child dt i {
+        font-size: 22px !important; }
+    footer .footContent .footList2 dl:last-child dd {
+      height: 60px;
+      line-height: 15px; }
+      footer .footContent .footList2 dl:last-child dd span {
+        font-size: 20px;
+        color: #415fff;
+        display: block; }
+      footer .footContent .footList2 dl:last-child dd b {
+        display: block;
+        font-size: 14px;
+        line-height: 40px; }
+      footer .footContent .footList2 dl:last-child dd i {
+        font-size: 20px !important;
+        margin-right: 20px; }
+  footer .footContent .footList3 {
+    line-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    color: #666666; }
 
 @keyframes btn {
   0% {

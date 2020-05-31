@@ -5,7 +5,8 @@ require.config({
 		"jquery": "jquery-1.10.1.min",
 		"jquery-cookie": "jquery.cookie",
 		"banner":"banner",
-		"indexHover":"indexHover"
+		"indexHover":"indexHover",
+		"content":"content"
 	},
     shim: {
         //jquery.cookie 是依赖于 jquery开发
@@ -19,8 +20,12 @@ require.config({
 })
 
 //调用函数实现对应的功能
-require(["banner","indexHover"],function(banner,indexHover){
-	// banner.banner()
+require(["banner","indexHover","content"],function(banner,indexHover,content){
+	// banner.banner(),
 	indexHover.bannerList(),
-	indexHover.asideHover()
+	indexHover.asideHover(),
+	// 在这里设置倒计时时间
+	content.time(23,0,0),
+	//v抢购处的商品左右滑动
+	content.rotation()
 })

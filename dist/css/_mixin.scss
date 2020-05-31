@@ -2,7 +2,7 @@
 //共享的一些混合
 
 //清除浮动
-@mixin clearBoth {
+@mixin clearBoth{
     content: "";
     height: 0;
     clear: both;
@@ -11,8 +11,11 @@
     visibility: hidden; 
 }
 
-@mixin  main {
+@mixin  main{
+	position: absolute;
+	left: 0;
+	right: 0;
 	margin: auto;
-	width: 100%;
+	width: 1200px;
 }
 
