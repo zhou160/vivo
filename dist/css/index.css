@@ -91,77 +91,85 @@ header .headBot {
         animation: btn 5s; }
     .banner ol .active {
       height: 5px; }
-  .banner .bannerList nav {
-    padding: 35px 0px;
-    background-color: rgba(255, 255, 255, 0.7);
-    position: absolute;
+  .banner .bannerList {
+    width: 960px;
+    position: relative;
     top: 20px;
     left: 70px;
     z-index: 10; }
-    .banner .bannerList nav li {
-      width: 200px; }
+    .banner .bannerList nav {
+      padding: 35px 0px;
+      width: 200px;
+      background-color: rgba(255, 255, 255, 0.7); }
       .banner .bannerList nav li a {
         display: flex;
         justify-content: space-between;
         padding: 25px 30px 18px 43px; }
       .banner .bannerList nav li :hover {
         background-color: white; }
-  .banner .bannerList aside {
-    position: absolute;
-    top: 20px;
-    left: 280px;
-    background-color: white;
-    width: 750px;
-    height: 420px;
-    display: none;
-    z-index: 10;
-    box-sizing: content-box;
-    padding: 17px 50px 47px 17px; }
-    .banner .bannerList aside header {
-      display: flex;
-      justify-content: space-between;
-      line-height: 38px; }
-      .banner .bannerList aside header span:last-child {
-        font-size: 12px;
-        color: #999999; }
-    .banner .bannerList aside .classList1 {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 18px; }
-      .banner .bannerList aside .classList1 li {
-        width: 100px;
-        border-radius: 10px;
-        margin-top: 11px;
-        background: url(../images/back1.jpg) no-repeat;
-        background-size: 160px 50px;
-        text-align: right;
-        line-height: 50px;
-        box-sizing: content-box;
-        padding-right: 60px;
-        position: relative; }
-        .banner .bannerList aside .classList1 li span {
-          display: none;
-          width: 160px;
-          height: 50px;
-          background-color: rgba(0, 0, 0, 0.1);
-          position: absolute;
-          left: 0;
-          top: 0;
-          border-radius: 10px; }
-    .banner .bannerList aside .classList2 {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding-top: 26px; }
-      .banner .bannerList aside .classList2 li {
-        min-width: 200px;
-        margin-bottom: 20px;
-        height: 45px; }
-        .banner .bannerList aside .classList2 li img {
-          height: 45px;
-          margin-right: 10px; }
+    .banner .bannerList aside {
+      position: absolute;
+      top: 0px;
+      left: 210px;
+      background-color: white;
+      width: 750px;
+      height: 420px;
+      display: none;
+      z-index: 11;
+      box-sizing: content-box;
+      padding: 17px 50px 47px 17px; }
+      .banner .bannerList aside header {
+        display: flex;
+        justify-content: space-between;
+        line-height: 38px; }
+        .banner .bannerList aside header span:last-child {
+          font-size: 12px;
+          color: #999999; }
+      .banner .bannerList aside .classList1 {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 18px; }
+        .banner .bannerList aside .classList1 li {
+          margin-right: 35px;
+          width: 100px;
+          border-radius: 10px;
+          margin-top: 11px;
+          background: url(../images/back1.jpg) no-repeat;
+          background-size: 160px 50px;
+          text-align: right;
+          line-height: 50px;
+          box-sizing: content-box;
+          padding-right: 60px;
+          position: relative; }
+          .banner .bannerList aside .classList1 li span {
+            display: none;
+            width: 160px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 10px; }
+        .banner .bannerList aside .classList1 :nth-child(4n) {
+          margin-right: 0px; }
+      .banner .bannerList aside .classList2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 26px; }
+        .banner .bannerList aside .classList2 li {
+          width: 230px;
+          margin-right: 30px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-bottom: 20px;
+          height: 45px; }
+          .banner .bannerList aside .classList2 li img {
+            height: 45px;
+            margin-right: 10px; }
+        .banner .bannerList aside .classList2 :nth-child(3n) {
+          margin-right: 0px; }
 
 .content {
   background-color: #f7f7f5;
@@ -180,11 +188,21 @@ header .headBot {
     .content .content1 li a {
       display: block;
       width: 290px;
-      height: 140px;
-      background: url(../images/content1-1.jpg);
-      background-size: 100%; }
+      height: 140px; }
     .content .content1 li :hover {
       box-shadow: 5px 5px 5px #e3e3e1; }
+    .content .content1 :nth-child(1) a {
+      background: url(../images/content1-1.jpg);
+      background-size: 100%; }
+    .content .content1 :nth-child(2) a {
+      background: url(../images/content1-2.jpg);
+      background-size: 100%; }
+    .content .content1 :nth-child(3) a {
+      background: url(../images/content1-3.png);
+      background-size: 100%; }
+    .content .content1 :nth-child(4) a {
+      background: url(../images/content1-4.png);
+      background-size: 100%; }
   .content .content2 {
     position: absolute;
     left: 0;
@@ -250,7 +268,7 @@ header .headBot {
       width: 1200px;
       overflow: hidden; }
       .content .content2 .box .content2List {
-        width: 2690px;
+        width: 4190px;
         display: flex;
         justify-content: space-between;
         position: relative;
@@ -262,7 +280,35 @@ header .headBot {
           height: 265px;
           background-color: white;
           position: relative;
-          padding: 60px 20px 55px; }
+          padding: 60px 20px 55px;
+          text-align: center; }
+          .content .content2 .box .content2List li h3 {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            line-height: 40px;
+            font-size: 18px; }
+          .content .content2 .box .content2List li h2 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 140px;
+            line-height: 52px;
+            font-size: 24px; }
+          .content .content2 .box .content2List li h4 {
+            width: 145px;
+            line-height: 50px;
+            border-radius: 25px;
+            color: white;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 235px; }
           .content .content2 .box .content2List li .img1 {
             position: absolute;
             left: 0;
@@ -288,15 +334,13 @@ header .headBot {
             .content .content2 .box .content2List li div span {
               display: block;
               width: 250px;
-              text-align: center;
               font-size: 12px;
               line-height: 30px; }
             .content .content2 .box .content2List li div b {
               display: block;
               width: 250px;
               color: red;
-              height: 30px;
-              text-align: center; }
+              height: 30px; }
               .content .content2 .box .content2List li div b i:first-child {
                 font-size: 14px;
                 font-weight: bold; }
@@ -319,43 +363,43 @@ header .headBot {
       text-align: center;
       font-size: 20px;
       line-height: 75px; }
-    .content .content3 ul {
+    .content .content3 .content3List {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap; }
-      .content .content3 ul li {
+      .content .content3 .content3List li {
         width: 390px;
         height: 430px;
         background-color: white;
         padding-top: 80px;
         position: relative; }
-        .content .content3 ul li img {
+        .content .content3 .content3List li img {
           height: 185px;
           position: absolute;
           left: 0;
           right: 0;
           margin: auto; }
-        .content .content3 ul li div {
+        .content .content3 .content3List li div {
           position: absolute;
           bottom: 65px;
           text-align: center; }
-          .content .content3 ul li div p {
+          .content .content3 .content3List li div p {
             width: 395px;
             line-height: 34px;
             font-size: 20px; }
-          .content .content3 ul li div span {
+          .content .content3 .content3List li div span {
             display: block;
             line-height: 32px;
             font-size: 12px; }
-          .content .content3 ul li div b {
+          .content .content3 .content3List li div b {
             display: block;
             line-height: 68px;
             font-size: 20px;
             color: red;
             font-weight: bold; }
-            .content .content3 ul li div b i {
+            .content .content3 .content3List li div b i {
               font-size: 14px; }
-      .content .content3 ul li:hover {
+      .content .content3 .content3List li:hover {
         box-shadow: -4px 22px 20px #e3e3e1; }
   .content .content4 {
     position: absolute;

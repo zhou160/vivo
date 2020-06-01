@@ -89,15 +89,20 @@ header{
 		}
 	}
 	.bannerList{
+		// overflow: hidden;
+		// @include clearBoth;
+		width: 960px;
+		position: relative;
+		top: 20px;
+		left: 70px;
+		z-index: 10;
 		nav{
 			padding:35px 0px;
+			width: 200px;
 			background-color: rgba(255,255,255,0.7);
-			position: absolute;
-			top: 20px;
-			left: 70px;
-			z-index: 10;
+			// position: absolute;
 			li{
-				width: 200px;
+				// width: 200px;
 				a{
 					display: flex;
 					justify-content: space-between;
@@ -110,13 +115,13 @@ header{
 		}
 		aside{
 			position: absolute;
-			top: 20px;
-			left: 280px;
+			top: 0px;
+			left: 210px;
 			background-color: white;
 			width: 750px;
 			height: 420px;
 			display: none;
-			z-index: 10;
+			z-index: 11;
 			box-sizing: content-box;
 			padding: 17px 50px 47px 17px;
 			header{
@@ -130,15 +135,13 @@ header{
 				}
 				.classList1{
 					display: flex;
-					justify-content: space-between;
 					flex-wrap: wrap;
 					border-bottom: 1px solid #ccc;
 					padding-bottom: 18px;
 					li{
-						
+						margin-right: 35px;
 						width: 100px;
 						border-radius: 10px;
-						// height: 50px;
 						margin-top: 11px;
 						background: url(../images/back1.jpg) no-repeat;
 						background-size:160px 50px;
@@ -157,28 +160,31 @@ header{
 							top: 0;
 							border-radius: 10px;
 						}
-						// :hover span{
-						// 	display: inline-block;
-						// }
-						// :hover{
-						// 	display: none;
-						// }
+					}
+					:nth-child(4n){
+						margin-right: 0px;
 					}
 			}
 			.classList2{
 				display: flex;
-				justify-content: space-between;
 				flex-wrap: wrap;
+				
 				padding-top: 26px;
 				li{
-					min-width: 200px;
-					// background-color: red;
+					width: 230px;
+					margin-right: 30px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
 					margin-bottom: 20px;
 					height: 45px;
 					img{
 						height: 45px;
 						margin-right: 10px;
 					}
+				}
+				:nth-child(3n){
+					margin-right: 0px;
 				}
 			}
 		}
@@ -205,11 +211,33 @@ header{
 				display: block;
 				width: 290px;
 				height: 140px;
-				background: url(../images/content1-1.jpg);
-				background-size: 100%;
 			}
 			:hover{
 				box-shadow: 5px 5px 5px #e3e3e1;
+			}
+		}
+		:nth-child(1){
+			a{
+				background: url(../images/content1-1.jpg);
+				background-size: 100%;
+			}
+		}
+		:nth-child(2){
+			a{
+				background: url(../images/content1-2.jpg);
+				background-size: 100%;
+			}
+		}
+		:nth-child(3){
+			a{
+				background: url(../images/content1-3.png);
+				background-size: 100%;
+			}
+		}
+		:nth-child(4){
+			a{
+				background: url(../images/content1-4.png);
+				background-size: 100%;
 			}
 		}
 	}
@@ -256,7 +284,7 @@ header{
 			width: 1200px;
 			overflow: hidden;
 			.content2List{
-				width: 2690px;
+				width: 4190px;
 				display: flex;
 				justify-content: space-between;
 				position: relative;
@@ -269,6 +297,37 @@ header{
 					background-color: white;
 					position: relative;
 					padding: 60px 20px 55px;
+					text-align: center;
+					h3{
+						position: absolute;
+						top: 100px;
+						left: 0;
+						right: 0;
+						margin: auto;
+						line-height: 40px;
+						font-size: 18px;
+					}
+					h2{
+						position: absolute;
+						left: 0;
+						right: 0;
+						margin: auto;
+						top: 140px;
+						line-height: 52px;
+						font-size: 24px;
+					}
+					h4{
+						width: 145px;
+						line-height: 50px;
+						border-radius: 25px;
+						color: white;
+						background-color: red;
+						position: absolute;
+						left: 0;
+						right: 0;
+						margin: auto;
+						top: 235px;
+					}
 					.img1{
 						position: absolute;
 						left: 0;
@@ -286,6 +345,7 @@ header{
 					div{
 						position: absolute;
 						bottom: 55px;
+						// text-align: center;
 						p{
 							width: 250px;
 							line-height: 35px;
@@ -297,7 +357,7 @@ header{
 						span{
 							display: block;
 							width: 250px;
-							text-align: center;
+							// text-align: center;
 							font-size: 12px;
 							line-height: 30px;
 						}
@@ -306,7 +366,7 @@ header{
 							width: 250px;
 							color: red;
 							height: 30px;
-							text-align: center;
+							// text-align: center;
 							i:first-child{
 								font-size: 14px;
 								font-weight: bold;
@@ -336,7 +396,7 @@ header{
 			font-size: 20px;
 			line-height: 75px;
 		}
-		ul{
+		.content3List{
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;

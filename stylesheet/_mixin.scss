@@ -5,6 +5,7 @@
 @mixin clearBoth{
     content: "";
     height: 0;
+	width: 0;
     clear: both;
     display: block;
     overflow: hidden;

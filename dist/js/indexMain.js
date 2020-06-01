@@ -20,12 +20,16 @@ require.config({
 })
 
 //调用函数实现对应的功能
-require(["banner","indexHover","content"],function(banner,indexHover,content){
+require(["banner","indexHover","content"],function(banner,indexHover,content,ajaxData){
 	// banner.banner(),
-	indexHover.bannerList(),
-	indexHover.asideHover(),
+	indexHover.bannerList()
+	indexHover.asideHover()//用来控制aside中的蒙层
 	// 在这里设置倒计时时间
-	content.time(23,0,0),
+	content.time(20,0,0)
 	//v抢购处的商品左右滑动
 	content.rotation()
+	//vshow资源展示
+	content.vshow()
+	content.contentshow()
+	// ajaxData.menuData()
 })
