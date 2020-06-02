@@ -1,0 +1,130 @@
+@import  "mixin";
+@import  "base";
+header{
+	.headTop{
+		display: flex;
+		justify-content: space-between;
+		background-color: black;
+		height: 30px;
+		line-height: 30px;
+		ul li{
+			float: left;
+			margin-left: 30px;
+		}
+		a{
+			color: white;
+		}
+	}
+	.headBot{
+		display: flex;
+		justify-content: space-around;
+		line-height: 70px;
+		background-color: #f7f7f5;
+		span:first-child{
+			font-size: 22px;
+			font-weight: bold;
+		}
+		ul{
+			display: flex;
+			li{
+				margin-right: 34px;
+			}
+			li:last-child{
+				margin-right: 0px;
+			}
+			a{
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.right{
+	width: 50px;
+	height: 150px;
+	background-color: white;
+	position: fixed;
+	right: 0;
+	bottom: 100px;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	a{
+		display: block;
+		width: 27px;
+		i{
+			// text-align: center;
+			font-size: 25px !important;
+		}
+	}
+}
+
+//尾部内容
+footer{
+	.footContent{
+		@include  main;
+		.footList1{
+			padding-top: 30px;
+			display: flex;
+			justify-content: space-around;
+			border-bottom: 1px solid #ccc;
+			li{
+				line-height: 85px;
+				color: black;
+				i{
+					// font-size: 25px !important;
+					margin-right: 5px;
+				}
+			}
+		}
+		.footList2{
+			display: flex;
+			justify-content: space-between;
+			padding: 30px 0px 70px;
+			border-bottom: 1px solid #ccc;
+			dt{
+				line-height: 100px;
+				color: #333333;
+			}
+			dd{
+				font-size: 12px;
+				line-height: 35px;
+				color: #666666;
+			}
+			dl:last-child{
+				dt{
+					font-size: 22px;
+					i{
+						font-size: 22px !important;
+					}
+				}
+				dd{
+					height: 60px;
+					line-height:15px;
+					span{
+						font-size: 20px;
+						color: #415fff;
+						display: block;
+					}
+					b{
+						display: block;
+						font-size: 14px;
+						line-height: 40px;
+					}
+					i{
+						font-size: 20px !important;
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+		.footList3{
+			line-height: 75px;
+			display: flex;
+			justify-content: space-between;
+			color: #666666;
+		}
+	}
+}

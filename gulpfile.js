@@ -62,7 +62,7 @@ gulp.task("build",["copy-index","copy-html","data","script","images","scss"],fun
 //监听
 gulp.task("watch",function (){
 	gulp.watch("index.html",["copy-index"])
-	gulp.watch(["html/*.html","!index.html"],["copy-heml"])
+	gulp.watch(["html/*.html","!index.html"],["copy-html"])
 	gulp.watch("data/*.json",["data"])
 	gulp.watch("js/*.js",["script"])
 	gulp.watch("stylesheet/*.scss",["scss"])
