@@ -79,7 +79,7 @@ define(["jquery"],function ($){
 			// 内容三区域展示
 			var cont3str = ''
 			data.hot.forEach(function (item){
-				console.log(item)
+				// console.log(item)
 				cont3str += `<li>
 						<img src="${item.picSrc}" class="img1">
 						<div>

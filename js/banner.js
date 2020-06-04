@@ -18,7 +18,7 @@ define(["jquery"],function ($){
 			tab(oli,nowIndex)
 			oli.find("span").removeClass("anima1")
 			oli.eq(nowIndex).find("span").addClass("anima1")
-			console.log(timer)
+			// console.log(timer)
 		},5000)
 		// 鼠标移入停止轮播
 		var Enter = false//记录第一次鼠标移出继续自动轮播
@@ -53,7 +53,7 @@ define(["jquery"],function ($){
 			// }
 			timer = setInterval(function (){
 				nowIndex ++
-				console.log("轮播下标"+nowIndex)
+				// console.log("轮播下标"+nowIndex)
 				if(nowIndex == 5) nowIndex = 0
 				tab(oli,nowIndex)
 				oli.find("span").removeClass("anima1")

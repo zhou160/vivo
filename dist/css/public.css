@@ -11,7 +11,8 @@ fieldset, img {
 h1, h2, h3, h4, h5, h6, b, strong, i, em, u {
   font-weight: normal;
   font-style: normal;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: normal; }
 
 ul, ol, li {
   list-style: none; }
@@ -66,9 +67,23 @@ header .headBot {
   flex-wrap: wrap; }
   .right a {
     display: block;
-    width: 27px; }
+    width: 27px;
+    position: relative; }
     .right a i {
       font-size: 25px !important; }
+    .right a b {
+      display: none;
+      width: 15px;
+      height: 15px;
+      background-color: red;
+      position: absolute;
+      border-radius: 15px;
+      font-size: 12px;
+      text-align: center;
+      line-height: 15px;
+      color: white;
+      right: -10px;
+      top: -10px; }
 
 footer .footContent {
   position: absolute;

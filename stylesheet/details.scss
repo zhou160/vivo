@@ -21,17 +21,19 @@
 				li{
 					position: absolute;
 					opacity: 0;
-					
+					transition: 1.5s;
 				}
 				.active{
 					opacity: 1;
 					z-index: 10;
+					transition: 1.5s;
 				}
 				.img1{
 					height: 500px;
 				}
 			}
 			.img2{
+				z-index: 10;
 				height: 90px;
 				top: 5px;
 				right: 0;
@@ -101,6 +103,11 @@
 				padding-bottom: 20px;
 				span{
 					color: red;
+					font-size: 12px;
+					
+				}
+				i{
+					font-size: 12px;
 				}
 			}
 			.price{
@@ -115,9 +122,11 @@
 					}
 					span:first-child{
 						color: red;
-						font-size: 30px;
 						i{
 							font-size: 22px;
+						}
+						b{
+							font-size: 30px;
 						}
 					}
 					span:last-child{
@@ -141,6 +150,9 @@
 							color: white;
 							background-color: red;
 							margin-right: 10px;
+						}
+						b{
+							font-size: 12px;
 						}
 					}
 					:first-child{
@@ -180,6 +192,8 @@
 				dd{
 					width: 240px;
 					height: 60px;
+					float: left;
+					margin-right: 10px;
 					border-radius: 5px;
 					border: 1px solid #ccc;
 					display: flex;
@@ -192,10 +206,14 @@
 						height: 25px;
 						border-radius: 25px;
 						border: 1px solid #ccc;
-						background-color: white;
 						margin-right: 5px;
 					}
-					
+				}
+				:first-child i{
+					background-color: white;
+				}
+				:last-child i{
+					background-color: gray;
 				}
 			}
 			.package{
@@ -302,6 +320,9 @@
 					padding-right: 20px;
 					height: 25px;
 					border-right: 1px solid #ccc;
+					i{
+						font-size: 22px;
+					}
 				}
 				dd{
 					padding-left:20px ;
@@ -326,6 +347,7 @@
 					font-size: 18px;
 					color: white;
 					margin-right: 25px;
+					cursor: pointer;
 				}
 				dd{
 					width: 170px;
@@ -335,7 +357,12 @@
 					background-color: #f50e44;
 					font-size: 18px;
 					color: white;
+					cursor: pointer;
 				}
+			}
+			.active{
+				border-color: red !important;
+				color: red !important;
 			}
 		}
 	}
@@ -385,14 +412,18 @@
 			}
 			.recomm{
 				width: 1010px;
+				height: 240px;
 				overflow: hidden;
 				position: absolute;
 				.recoList{
 					display: flex;
+					position: absolute;
+					top: 0;
+					left: 0;
 					justify-content: space-between;
 					width: 1265px;
 					li{
-						background-color: green;
+						background-color: white;
 						width:245px;
 						height: 240px;
 						position: relative;
@@ -439,18 +470,82 @@
 		}
 	}
 	.foot{
+		position: relative;
 		.head{
-			padding: 20px 0px 15px 70px;
-			font-size: 18px;
-			color: #949494;
-			span{
-				display: inline-block;
-				line-height: 45px;
-				margin-right: 65px;
+			z-index: 1;
+			background-color: white;
+			position: absolute;
+			top: 0px;
+			width: 100%;
+			height: 80px;
+			.footLeft{
+				padding: 20px 0px 15px 70px;
+				font-size: 18px;
+				color: #949494;
+				float: left;
+				span{
+					display: inline-block;
+					line-height: 45px;
+					margin-right: 65px;
 			}
 			.active{
 				color: #4f3945;
 				border-bottom: 1px solid #4f3945;
+			}
+			}
+			.footRight{
+				display: none;
+				float: right;
+				dl{
+					position: absolute;
+					right: 315px;
+					top: 15px;
+					display: flex;
+					dt{
+						img{
+							height: 60px;
+						}
+					}
+					dd{
+						padding-top: 15px;
+						span{
+							display: block;
+							line-height: 20px;
+							font-size: 12px;
+						}
+						:nth-child(1){
+							i{
+								color: red;
+							}
+						}
+						:nth-child(2){
+							color: #9c9c9c;
+						}
+					}
+				}
+				p{
+					width: 125px;
+					height: 28px;
+					border-radius: 28px;
+					line-height: 28px;
+					color: white;
+					text-align: center;
+					background-color: #444444;
+					position: absolute;
+					top: 28px;
+					right: 25px;
+				}
+			}
+		}
+		.footimg{
+			height: 600px;
+			width: 100%;
+			top: 80px;
+			overflow: hidden;
+			position: relative;
+			img{
+				position: absolute;
+				left: -200px;
 			}
 		}
 	}

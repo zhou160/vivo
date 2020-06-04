@@ -39,20 +39,21 @@ define(["jquery"],function ($){
 	//将获取到的信息动态显示在右侧信息框中
 	function show(_this){
 		var index = _this.attr("data_id")
+		// console.log(index)
 		menu().then(function (data){
 			$(".bannerList header span").eq(0).html(data[index].name)
 			$(".bannerList header i").html(data[index].name)
 			var Html = ''
 			data[index].secondNav.forEach(function (item,index){
-					Html += `<li style="background:url(${item.image.pcBigPic}) no-repeat;background-size:160px 50px;"><a href="">${item.name}<span></span></a></li>`
+					Html += `<li style="background:url(${item.image.pcBigPic}) no-repeat;background-size:160px 50px;"><a href="localhost:1017/html/details.html">${item.name}<span></span></a></li>`
 			})
 			$(".classList1").html(Html)
 			var str = ''
-			data[index].dataList.forEach(function (item){
-				str += `<li><a href=""><img src="${item.images[0].smallPic}">${item.skuName}</a></li>`
+			data[index].dataList.forEach(function (item,i){
+				str += `<li><a href="html/details.html?type=${index}&&num=${i}"><img src="${item.images[0].smallPic}">${item.skuName}</a></li>`
 			})
 			$(".classList2").html(str)
-			console.log(str)
+			// console.log(str)
 			// console.log(data[index].dataList[0].images[0].smallPic)
 		})
 	}

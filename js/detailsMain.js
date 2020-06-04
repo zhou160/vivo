@@ -2,7 +2,8 @@ require.config({
 	paths:{
 		"jquery": "jquery-1.10.1.min",
 		"jquery-cookie": "jquery.cookie",
-		"detailEvent":"detailEvent"
+		"detailEvent":"detailEvent",
+		"detailsContent":"detailsContent"
 	},
     shim: {
         //jquery.cookie 是依赖于 jquery开发
@@ -16,7 +17,15 @@ require.config({
 })
 
 //调用函数实现对应的功能
-require(["detailEvent"],function(detailEvent){
+require(["detailEvent","detailsContent"],function(detailEvent,detailsContent){
+	var str = location.href.split('?')[1].split("&&")
+	var type=str[0].split('=')[1]
+	var num = str[1].split('=')[1]
+	detailsContent.detailsList(type,num)
+	detailEvent.sum()
 	detailEvent.detailScroll()
-	// console.log(123)
+	detailEvent.switchImg()
+	detailEvent.recommend()
+	detailEvent.num()
+	detailEvent.addCart()
 })

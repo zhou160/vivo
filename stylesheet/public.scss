@@ -58,6 +58,21 @@ header{
 			// text-align: center;
 			font-size: 25px !important;
 		}
+		position: relative;
+		b{
+			display: none;
+			width: 15px;
+			height: 15px;
+			background-color: red;
+			position: absolute;
+			border-radius: 15px;
+			font-size: 12px;
+			text-align: center;
+			line-height: 15px;
+			color: white;
+			right: -10px;
+			top: -10px;
+		}
 	}
 }
 

@@ -11,7 +11,8 @@ fieldset, img {
 h1, h2, h3, h4, h5, h6, b, strong, i, em, u {
   font-weight: normal;
   font-style: normal;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: normal; }
 
 ul, ol, li {
   list-style: none; }
@@ -40,13 +41,16 @@ img {
       position: relative; }
       .product .detailes .detaileLeft .imgList li {
         position: absolute;
-        opacity: 0; }
+        opacity: 0;
+        transition: 1.5s; }
       .product .detailes .detaileLeft .imgList .active {
         opacity: 1;
-        z-index: 10; }
+        z-index: 10;
+        transition: 1.5s; }
       .product .detailes .detaileLeft .imgList .img1 {
         height: 500px; }
     .product .detailes .detaileLeft .img2 {
+      z-index: 10;
       height: 90px;
       top: 5px;
       right: 0;
@@ -102,7 +106,10 @@ img {
       font-size: 12px;
       padding-bottom: 20px; }
       .product .detailes .detaileRight h2 span {
-        color: red; }
+        color: red;
+        font-size: 12px; }
+      .product .detailes .detaileRight h2 i {
+        font-size: 12px; }
     .product .detailes .detaileRight .price {
       padding: 35px 0px;
       border-top: 1px solid #ccc;
@@ -112,10 +119,11 @@ img {
       .product .detailes .detaileRight .price dt span {
         display: block; }
       .product .detailes .detaileRight .price dt span:first-child {
-        color: red;
-        font-size: 30px; }
+        color: red; }
         .product .detailes .detaileRight .price dt span:first-child i {
           font-size: 22px; }
+        .product .detailes .detaileRight .price dt span:first-child b {
+          font-size: 30px; }
       .product .detailes .detaileRight .price dt span:last-child {
         font-size: 12px;
         color: #d6d6d6;
@@ -135,6 +143,8 @@ img {
             color: white;
             background-color: red;
             margin-right: 10px; }
+          .product .detailes .detaileRight .price dd span b {
+            font-size: 12px; }
         .product .detailes .detaileRight .price dd :first-child {
           margin-bottom: 5px; }
     .product .detailes .detaileRight .server {
@@ -159,6 +169,8 @@ img {
       .product .detailes .detaileRight .color dd {
         width: 240px;
         height: 60px;
+        float: left;
+        margin-right: 10px;
         border-radius: 5px;
         border: 1px solid #ccc;
         display: flex;
@@ -171,8 +183,11 @@ img {
           height: 25px;
           border-radius: 25px;
           border: 1px solid #ccc;
-          background-color: white;
           margin-right: 5px; }
+      .product .detailes .detaileRight .color :first-child i {
+        background-color: white; }
+      .product .detailes .detaileRight .color :last-child i {
+        background-color: gray; }
     .product .detailes .detaileRight .package {
       margin-bottom: 20px; }
       .product .detailes .detaileRight .package dt {
@@ -258,6 +273,8 @@ img {
         padding-right: 20px;
         height: 25px;
         border-right: 1px solid #ccc; }
+        .product .detailes .detaileRight .malePrice dt i {
+          font-size: 22px; }
       .product .detailes .detaileRight .malePrice dd {
         padding-left: 20px;
         color: #5c5b57; }
@@ -276,7 +293,8 @@ img {
         background-color: #444444;
         font-size: 18px;
         color: white;
-        margin-right: 25px; }
+        margin-right: 25px;
+        cursor: pointer; }
       .product .detailes .detaileRight .btn dd {
         width: 170px;
         border-radius: 45px;
@@ -284,7 +302,11 @@ img {
         line-height: 45px;
         background-color: #f50e44;
         font-size: 18px;
-        color: white; }
+        color: white;
+        cursor: pointer; }
+    .product .detailes .detaileRight .active {
+      border-color: red !important;
+      color: red !important; }
 
 .product .recommend {
   background-color: #f7f7f7;
@@ -325,14 +347,18 @@ img {
       right: -70px; }
     .product .recommend .reco .recomm {
       width: 1010px;
+      height: 240px;
       overflow: hidden;
       position: absolute; }
       .product .recommend .reco .recomm .recoList {
         display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
         justify-content: space-between;
         width: 1265px; }
         .product .recommend .reco .recomm .recoList li {
-          background-color: green;
+          background-color: white;
           width: 245px;
           height: 240px;
           position: relative;
@@ -371,14 +397,64 @@ img {
             color: red;
             font-size: 12px; }
 
-.product .foot .head {
-  padding: 20px 0px 15px 70px;
-  font-size: 18px;
-  color: #949494; }
-  .product .foot .head span {
-    display: inline-block;
-    line-height: 45px;
-    margin-right: 65px; }
-  .product .foot .head .active {
-    color: #4f3945;
-    border-bottom: 1px solid #4f3945; }
+.product .foot {
+  position: relative; }
+  .product .foot .head {
+    z-index: 1;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 80px; }
+    .product .foot .head .footLeft {
+      padding: 20px 0px 15px 70px;
+      font-size: 18px;
+      color: #949494;
+      float: left; }
+      .product .foot .head .footLeft span {
+        display: inline-block;
+        line-height: 45px;
+        margin-right: 65px; }
+      .product .foot .head .footLeft .active {
+        color: #4f3945;
+        border-bottom: 1px solid #4f3945; }
+    .product .foot .head .footRight {
+      display: none;
+      float: right; }
+      .product .foot .head .footRight dl {
+        position: absolute;
+        right: 315px;
+        top: 15px;
+        display: flex; }
+        .product .foot .head .footRight dl dt img {
+          height: 60px; }
+        .product .foot .head .footRight dl dd {
+          padding-top: 15px; }
+          .product .foot .head .footRight dl dd span {
+            display: block;
+            line-height: 20px;
+            font-size: 12px; }
+          .product .foot .head .footRight dl dd :nth-child(1) i {
+            color: red; }
+          .product .foot .head .footRight dl dd :nth-child(2) {
+            color: #9c9c9c; }
+      .product .foot .head .footRight p {
+        width: 125px;
+        height: 28px;
+        border-radius: 28px;
+        line-height: 28px;
+        color: white;
+        text-align: center;
+        background-color: #444444;
+        position: absolute;
+        top: 28px;
+        right: 25px; }
+  .product .foot .footimg {
+    height: 600px;
+    width: 100%;
+    top: 80px;
+    overflow: hidden;
+    position: relative; }
+    .product .foot .footimg img {
+      position: absolute;
+      left: -200px; }

@@ -6,7 +6,8 @@ require.config({
 		"jquery-cookie": "jquery.cookie",
 		"banner":"banner",
 		"indexHover":"indexHover",
-		"content":"content"
+		"content":"content",
+		"detailEvent":"detailEvent"
 	},
     shim: {
         //jquery.cookie 是依赖于 jquery开发
@@ -20,8 +21,9 @@ require.config({
 })
 
 //调用函数实现对应的功能
-require(["banner","indexHover","content"],function(banner,indexHover,content,ajaxData){
-	// banner.banner(),
+require(["banner","detailEvent","indexHover","content"],function(banner,detailEvent,indexHover,content,ajaxData){
+	banner.banner()
+	detailEvent.sum()
 	indexHover.bannerList()
 	indexHover.asideHover()//用来控制aside中的蒙层
 	// 在这里设置倒计时时间
