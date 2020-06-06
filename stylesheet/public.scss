@@ -78,6 +78,7 @@ header{
 
 //尾部内容
 footer{
+	position: relative;
 	.footContent{
 		@include  main;
 		.footList1{

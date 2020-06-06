@@ -1,4 +1,4 @@
-html, body, ol, ul, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, form, input, select, textarea, table, td, tr, th, fieldset {
+html, body, ol, ul, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, form, input, select, textarea, table, td, tr, th, fieldset, span {
   margin: 0;
   padding: 0; }
 
@@ -85,54 +85,56 @@ header .headBot {
       right: -10px;
       top: -10px; }
 
-footer .footContent {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 1200px; }
-  footer .footContent .footList1 {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid #ccc; }
-    footer .footContent .footList1 li {
-      line-height: 85px;
-      color: black; }
-      footer .footContent .footList1 li i {
-        margin-right: 5px; }
-  footer .footContent .footList2 {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0px 70px;
-    border-bottom: 1px solid #ccc; }
-    footer .footContent .footList2 dt {
-      line-height: 100px;
-      color: #333333; }
-    footer .footContent .footList2 dd {
-      font-size: 12px;
-      line-height: 35px;
+footer {
+  position: relative; }
+  footer .footContent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1200px; }
+    footer .footContent .footList1 {
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid #ccc; }
+      footer .footContent .footList1 li {
+        line-height: 85px;
+        color: black; }
+        footer .footContent .footList1 li i {
+          margin-right: 5px; }
+    footer .footContent .footList2 {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 0px 70px;
+      border-bottom: 1px solid #ccc; }
+      footer .footContent .footList2 dt {
+        line-height: 100px;
+        color: #333333; }
+      footer .footContent .footList2 dd {
+        font-size: 12px;
+        line-height: 35px;
+        color: #666666; }
+      footer .footContent .footList2 dl:last-child dt {
+        font-size: 22px; }
+        footer .footContent .footList2 dl:last-child dt i {
+          font-size: 22px !important; }
+      footer .footContent .footList2 dl:last-child dd {
+        height: 60px;
+        line-height: 15px; }
+        footer .footContent .footList2 dl:last-child dd span {
+          font-size: 20px;
+          color: #415fff;
+          display: block; }
+        footer .footContent .footList2 dl:last-child dd b {
+          display: block;
+          font-size: 14px;
+          line-height: 40px; }
+        footer .footContent .footList2 dl:last-child dd i {
+          font-size: 20px !important;
+          margin-right: 20px; }
+    footer .footContent .footList3 {
+      line-height: 75px;
+      display: flex;
+      justify-content: space-between;
       color: #666666; }
-    footer .footContent .footList2 dl:last-child dt {
-      font-size: 22px; }
-      footer .footContent .footList2 dl:last-child dt i {
-        font-size: 22px !important; }
-    footer .footContent .footList2 dl:last-child dd {
-      height: 60px;
-      line-height: 15px; }
-      footer .footContent .footList2 dl:last-child dd span {
-        font-size: 20px;
-        color: #415fff;
-        display: block; }
-      footer .footContent .footList2 dl:last-child dd b {
-        display: block;
-        font-size: 14px;
-        line-height: 40px; }
-      footer .footContent .footList2 dl:last-child dd i {
-        font-size: 20px !important;
-        margin-right: 20px; }
-  footer .footContent .footList3 {
-    line-height: 75px;
-    display: flex;
-    justify-content: space-between;
-    color: #666666; }

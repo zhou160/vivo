@@ -1,0 +1,226 @@
+@import  "mixin";
+@import  "base";
+
+.shopCart{
+	position: relative;
+	background-color: #f7f7f7;
+	.SCartContent{
+		@include reMain;
+		.head{
+			background-color: white;
+			height: 70px;
+			li:first-child{
+				position: absolute;
+				top: 25px;
+				left: 550px;
+				font-size: 20px;
+			}
+			li:last-child{
+				top: 25px;
+				font-size: 12px;
+				position: absolute;
+				right: 40px;
+			}
+			border-bottom: 15px solid #f7f7f7;
+		}
+		.tab{
+			width: 1200px;
+			border-spacing:0px 5px;//用于设置单元格间距 列 行
+			border-bottom: 15px solid #f7f7f7;
+			thead{
+				background-color: white;
+				line-height: 65px;
+			}
+			input[type="checkbox"]{
+				// -webkit-appearance: none;//使元素看起来更像一个按钮s
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin-right: 5px;
+				vertical-align: middle;
+			}
+			tbody{
+				tr{
+						background-color: white;
+						padding: 20px 0px;
+						height: 150px;
+						box-sizing: content-box;
+					}
+					td{
+						text-align: center;
+					}
+					td:nth-child(1){
+						padding-right: 15px;
+					}
+					td:nth-child(2){
+						width: 365px;
+							dl{
+								display: flex;
+								dt{
+									height: 105px;
+									width: 100px;
+									border: 1px solid #ccc;
+									img{
+										height: 80px;
+									}
+								}
+								dd{
+									margin-top: 30px;
+									margin-left: 20px;
+									span{
+										display: block;
+										width: 240px;
+										line-height: 25px;
+										font-size: 14px;
+										text-align: left;
+									}
+									span:nth-child(1){
+										white-space: nowrap;
+										overflow: hidden;
+										text-overflow: ellipsis;
+									}
+								}
+							}
+						}
+					td:nth-child(4){
+						span{
+							display: inline-block;
+							width: 30px;
+							height: 30px;
+							line-height: 30px;
+							border: 1px solid #ccc;
+						}
+						span:nth-child(1){
+							cursor: pointer;
+						}
+						span:nth-child(3){
+							cursor: pointer;
+						}
+					}
+					td:nth-child(7){
+						color: red;
+					}
+					td:nth-child(8){
+						span{
+							display: block;
+							text-align: center;
+							line-height: 20px;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+			tfoot{
+				background-color: white;
+				padding: 20px 0;
+				tr{
+					height: 100px;
+				}
+				td:nth-child(1){
+					text-align: center;
+				}
+				td:nth-child(2){
+					span{
+						margin-left: 30px;
+					}
+				}
+				td:nth-child(4){
+					p{
+						font-size: 14px;
+						text-align: right;
+						padding-right: 20px;
+					}
+					p:nth-child(1){
+						i{
+							color: red;
+						}
+						b{
+							font-size: 30px;
+							color: red;
+						}
+					}
+					p:nth-child(2){
+						color: #7a8380;
+					}
+				}
+				td:nth-child(5){
+					position: relative;
+					span{
+						display: block;
+						width: 170px;
+						height: 50px;
+						background-color: red;
+						color: white;
+						border-radius: 50px;
+						line-height: 50px;
+						text-align: center;
+						font-size: 18px;
+						position: absolute;
+						left: 0;
+						right: 0;
+						margin: auto;
+						top: 20px;
+					}
+				}
+			}
+		}
+		.content{
+			.head1{
+				line-height: 65px;
+				font-size: 18px;
+			}
+			.reco{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				li{
+					position: relative;
+					width: 295px;
+					height: 380px;
+					background-color: white;
+					margin-bottom: 10px;
+					padding-top: 60px;
+					text-align: center;
+					img{
+						height: 140px;
+						margin-bottom: 35px;
+					}
+					p{
+						line-height: 30px;
+						font-size: 15px;
+						width: 295px;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow:ellipsis;
+					}
+					span{
+						width: 275px;
+						display: block;
+						font-size: 12px;
+						line-height: 30px;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow:ellipsis;
+						position: absolute;
+						left: 0;
+						right: 0;
+						margin: auto;
+					}
+					h1{
+						position: absolute;
+						bottom: 35px;
+						left: 0;
+						right: 0;
+						margin: auto;
+						color: red;
+						i{
+							font-size: 12px;
+						}
+						b{
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}

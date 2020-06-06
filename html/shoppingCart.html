@@ -2,11 +2,10 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>首页</title>
-		<link rel="stylesheet" type="text/css" href="css/public.css"/>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<title>购物车页面</title>
 		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1853168_j6mw1h6mt4s.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shopCart.css"/>
 	</head>
 	<body>
 		<!-- 头部列表 -->
@@ -37,118 +36,70 @@
 					<li><a href="">U系列</a></li>
 					<li><a href="">iQOO系列</a></li>
 					<li><a href="">真无线耳机</a></li>
-					<li><a href="">商城</a></li>
+					<li><a href="../index.html">商城</a></li>
 					<li><a href="">服务</a></li>
 				</ul>
 				<span class="iconfont icon-search"></span>
 			</div>
 		</header>
-		<!-- banner区域 -->
-		<section class="banner">
-			<!-- 轮播图区域 -->
-			<ul class="bannerImage">
-				<li><img src="images/banner1.jpg" alt="banner1" class="active"></li>
-				<li><img src="images/banner2.jpg" alt="banner2"></li>
-				<li><img src="images/banner3.jpg" alt="banner3"></li>
-				<li><img src="images/banner4.png" alt="banner4"></li>
-				<li><img src="images/banner5.png" alt="banner5"></li>
-				<li><img src="images/banner1.jpg" alt="banner1"></li>
-			</ul>
-			<ol>
-				<li class="active"><span class="anima1"></span></li>
-				<li><span></span></li>
-				<li><span></span></li>
-				<li><span></span></li>
-				<li><span></span></li>
-			</ol>
-			<div class="bannerList">
-				<nav>
-					<li data_id="one"><a href=""><span>手机</span><span>&gt;</span></a></li>
-					<li data_id="two"><a href=""><span>手机充电</span><span>&gt;</span></a></li>
-					<li data_id="three"><a href=""><span>手机配件</span><span>&gt;</span></a></li>
-					<li data_id="four"><a href=""><span>音乐设备</span><span>&gt;</span></a></li>
-					<li data_id="five"><a href=""><span>智能硬件</span><span>&gt;</span></a></li>
-					<li data_id="six"><a href=""><span>游戏摄影</span><span>&gt;</span></a></li>
-					<li data_id="seven"><a href=""><span>日用出行</span><span>&gt;</span></a></li>
-				</nav>
-				<!-- 列表左边内容 -->
-				<aside>
-					<!-- 头部标题 -->
-					<header>
-						<span>手机</span>
-						<span>全部<i>手机</i>&gt;</span>
-					</header>
-					<!-- 分类 -->
-					<ul class="classList1">
-
-					</ul>
-					<ul class="classList2">
-					</ul>
-				</aside>
-			</div>
-		</section>
-		
-		<!-- 内容区域 -->
-		<article class="content">
-			<!-- 内容区第一部分 -->
-			<ul class="content1">
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-			</ul>
-			<!-- 内容区第二部分 -->
-			<div class="content2">
-				<div class="head"><span>距离开始<i>08</i>时<i>08</i>分<i>08</i>秒</span><span><a href="">更多场次&gt;</a></span></div>
-				<article>
-					<!-- 左右两侧按钮 -->
-					<div class="content2Left">&lt;</div>
-					<div class="content2Right">&gt;</div>
-					<div class="box">
-						<ul class="content2List">
-							
-						</ul>
+		<!-- 购物车内容 -->
+		<article class="shopCart">
+			<div class="SCartContent">
+				<ul class="head">
+					<li>我的购物车</li>
+					<li>继续购物&gt;</li>
+				</ul>
+				<table class="tab">
+					<thead>
+						<tr>
+							<th><input type="checkbox" class="all" checked="true">全选</th>
+							<th>商品名称</th>
+							<th>价格 （元）</th>
+							<th>数量</th>
+							<th>优惠</th>
+							<th>赠送积分</th>
+							<th>小计 （元）</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+					<tfoot>
+						<tr>
+							<td><input type="checkbox" class="all" checked="true">全选</td>
+							<td>
+							<span>删除选中的商品</span>
+							<span>移入收藏夹</span>
+							</td>
+							<td></td>
+							<td colspan="3">
+								<p>已选商品<i>2</i>件，合计 （不含运费）：<b>￥188.00</b></p>
+								<p>（商品总价： ￥<i>218.00</i> 优惠： ￥<b>30.00</b>）</p></td>
+							<td colspan="2">
+								<span>去结算</span></td>
+						</tr>
+						
+					</tfoot>
+				</table>
+				
+				<!-- 信息推荐 -->
+				<div class="content">
+					<div class="head1">
+						猜你喜欢
 					</div>
-				</article>
-			</div>
-			<!-- 内容区第三部分 -->
-			<div class="content3">
-				<div class="head">热卖专区</div>
-				<ul class="content3List">
-					
-				</ul>
-			</div>
-			<!-- 内容区第四部分 -->
-			<div class="content4">
-				<div class="head">精品手机</div>
-				<ul class="content4List">
-					
-				</ul>
-			</div>
-			<!-- 内容区第五部分 -->
-			<div class="content5">
-				<div class="head">
-					精品配件
-					<p>
-						<span>手机充电</span>
-						<span>手机配件</span>
-						<span>音乐设备</span>
-						<span>更多&gt;</span>
-					</p>
+					<ul class="reco">	
+						
+					</ul>
 				</div>
-				<ul class="content5List">
-					
-				</ul>
 			</div>
 		</article>
-		
 		<!-- 右侧列表 -->
 		<div class="right">
-			<a href="html/shoppingCart.html"><i class="iconfont icon-gouwuche"><b></b></i></a>
+			<a href=""><i class="iconfont icon-gouwuche"><b></b></i></a>
 			<a href=""><i class="iconfont icon-kefu"></i></a>
 			<a href=""><i class="iconfont icon-bangzhu"></i></a>
 		</div>
-		
 		<footer>
 			<article class="footContent">
 				<ul class="footList1">
@@ -246,6 +197,6 @@
 				</nav>
 			</article>
 		</footer>
-		<script src="js/require.js" async="true" defer data-main="js/indexMain"></script>
+	<script src="../js/require.js" async="true" defer data-main="../js/SCartMain"></script>
 	</body>
 </html>

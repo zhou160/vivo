@@ -1,0 +1,196 @@
+html, body, ol, ul, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, form, input, select, textarea, table, td, tr, th, fieldset, span {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 12px; }
+
+fieldset, img {
+  border: none; }
+
+h1, h2, h3, h4, h5, h6, b, strong, i, em, u {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+img {
+  vertical-align: middle; }
+
+.shopCart {
+  position: relative;
+  background-color: #f7f7f7; }
+  .shopCart .SCartContent {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1200px; }
+    .shopCart .SCartContent .head {
+      background-color: white;
+      height: 70px;
+      border-bottom: 15px solid #f7f7f7; }
+      .shopCart .SCartContent .head li:first-child {
+        position: absolute;
+        top: 25px;
+        left: 550px;
+        font-size: 20px; }
+      .shopCart .SCartContent .head li:last-child {
+        top: 25px;
+        font-size: 12px;
+        position: absolute;
+        right: 40px; }
+    .shopCart .SCartContent .tab {
+      width: 1200px;
+      border-spacing: 0px 5px;
+      border-bottom: 15px solid #f7f7f7; }
+      .shopCart .SCartContent .tab thead {
+        background-color: white;
+        line-height: 65px; }
+      .shopCart .SCartContent .tab input[type="checkbox"] {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        vertical-align: middle; }
+      .shopCart .SCartContent .tab tbody tr {
+        background-color: white;
+        padding: 20px 0px;
+        height: 150px;
+        box-sizing: content-box; }
+      .shopCart .SCartContent .tab tbody td {
+        text-align: center; }
+      .shopCart .SCartContent .tab tbody td:nth-child(1) {
+        padding-right: 15px; }
+      .shopCart .SCartContent .tab tbody td:nth-child(2) {
+        width: 365px; }
+        .shopCart .SCartContent .tab tbody td:nth-child(2) dl {
+          display: flex; }
+          .shopCart .SCartContent .tab tbody td:nth-child(2) dl dt {
+            height: 105px;
+            width: 100px;
+            border: 1px solid #ccc; }
+            .shopCart .SCartContent .tab tbody td:nth-child(2) dl dt img {
+              height: 80px; }
+          .shopCart .SCartContent .tab tbody td:nth-child(2) dl dd {
+            margin-top: 30px;
+            margin-left: 20px; }
+            .shopCart .SCartContent .tab tbody td:nth-child(2) dl dd span {
+              display: block;
+              width: 240px;
+              line-height: 25px;
+              font-size: 14px;
+              text-align: left; }
+            .shopCart .SCartContent .tab tbody td:nth-child(2) dl dd span:nth-child(1) {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis; }
+      .shopCart .SCartContent .tab tbody td:nth-child(4) span {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid #ccc; }
+      .shopCart .SCartContent .tab tbody td:nth-child(4) span:nth-child(1) {
+        cursor: pointer; }
+      .shopCart .SCartContent .tab tbody td:nth-child(4) span:nth-child(3) {
+        cursor: pointer; }
+      .shopCart .SCartContent .tab tbody td:nth-child(7) {
+        color: red; }
+      .shopCart .SCartContent .tab tbody td:nth-child(8) span {
+        display: block;
+        text-align: center;
+        line-height: 20px;
+        cursor: pointer; }
+    .shopCart .SCartContent tfoot {
+      background-color: white;
+      padding: 20px 0; }
+      .shopCart .SCartContent tfoot tr {
+        height: 100px; }
+      .shopCart .SCartContent tfoot td:nth-child(1) {
+        text-align: center; }
+      .shopCart .SCartContent tfoot td:nth-child(2) span {
+        margin-left: 30px; }
+      .shopCart .SCartContent tfoot td:nth-child(4) p {
+        font-size: 14px;
+        text-align: right;
+        padding-right: 20px; }
+      .shopCart .SCartContent tfoot td:nth-child(4) p:nth-child(1) i {
+        color: red; }
+      .shopCart .SCartContent tfoot td:nth-child(4) p:nth-child(1) b {
+        font-size: 30px;
+        color: red; }
+      .shopCart .SCartContent tfoot td:nth-child(4) p:nth-child(2) {
+        color: #7a8380; }
+      .shopCart .SCartContent tfoot td:nth-child(5) {
+        position: relative; }
+        .shopCart .SCartContent tfoot td:nth-child(5) span {
+          display: block;
+          width: 170px;
+          height: 50px;
+          background-color: red;
+          color: white;
+          border-radius: 50px;
+          line-height: 50px;
+          text-align: center;
+          font-size: 18px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          top: 20px; }
+  .shopCart .content .head1 {
+    line-height: 65px;
+    font-size: 18px; }
+  .shopCart .content .reco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .shopCart .content .reco li {
+      position: relative;
+      width: 295px;
+      height: 380px;
+      background-color: white;
+      margin-bottom: 10px;
+      padding-top: 60px;
+      text-align: center; }
+      .shopCart .content .reco li img {
+        height: 140px;
+        margin-bottom: 35px; }
+      .shopCart .content .reco li p {
+        line-height: 30px;
+        font-size: 15px;
+        width: 295px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .shopCart .content .reco li span {
+        width: 275px;
+        display: block;
+        font-size: 12px;
+        line-height: 30px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto; }
+      .shopCart .content .reco li h1 {
+        position: absolute;
+        bottom: 35px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: red; }
+        .shopCart .content .reco li h1 i {
+          font-size: 12px; }
+        .shopCart .content .reco li h1 b {
+          font-size: 14px; }

@@ -19,6 +19,15 @@
 	margin: auto;
 	width: 1200px;
 }
+
+@mixin reMain {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1200px;
+}
+
 @mixin btn {
 	width: 35px;
 	height: 35px;
