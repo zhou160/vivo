@@ -16,12 +16,25 @@
 			position: relative;
 			top: 0px;
 			width: 510px;
+			.magnifier{
+				position: absolute;
+				display: block;
+				z-index: 100;
+				width: 200px;
+				height: 200px;
+				background-color: rgba(255,255,0,0.1);
+				display: none;
+			}
 			.imgList{
 				position: relative;
+				height: 500px;
+				width: 500px;
+				// border: 1px solid red;
 				li{
 					position: absolute;
 					opacity: 0;
 					transition: 1.5s;
+					border: 1px solid red;
 				}
 				.active{
 					opacity: 1;

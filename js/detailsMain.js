@@ -28,4 +28,5 @@ require(["detailEvent","detailsContent"],function(detailEvent,detailsContent){
 	detailEvent.recommend()
 	detailEvent.num()
 	detailEvent.addCart()
+	detailEvent.magnifier()
 })

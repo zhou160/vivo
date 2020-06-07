@@ -37,12 +37,23 @@ img {
     position: relative;
     top: 0px;
     width: 510px; }
+    .product .detailes .detaileLeft .magnifier {
+      position: absolute;
+      display: block;
+      z-index: 100;
+      width: 200px;
+      height: 200px;
+      background-color: rgba(255, 255, 0, 0.1);
+      display: none; }
     .product .detailes .detaileLeft .imgList {
-      position: relative; }
+      position: relative;
+      height: 500px;
+      width: 500px; }
       .product .detailes .detaileLeft .imgList li {
         position: absolute;
         opacity: 0;
-        transition: 1.5s; }
+        transition: 1.5s;
+        border: 1px solid red; }
       .product .detailes .detaileLeft .imgList .active {
         opacity: 1;
         z-index: 10;

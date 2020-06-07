@@ -1,6 +1,21 @@
 define(["jquery","jquery-cookie"],function ($){
 	
 	
+	// 放大图片
+	function magnifier(){
+		// 鼠标移入放大区域显示
+		// console.log("放大镜")
+		$(".imgList").mouseenter(function (){
+			// console.log(123)
+			$(".magnifier").css("display","block")
+			$(".imgList").mousemove(function (e){
+				console.log(e.pageX)
+			})
+		}).mouseleave(function (){
+			$(".magnifier").css("display","none")
+		})
+	}
+	
 	//鼠标滚动控制左侧大图停留以及评论区头部停留及显示和隐藏
 	function detailScroll(){
 		console.log("成功进入")
@@ -176,6 +191,7 @@ define(["jquery","jquery-cookie"],function ($){
 		return sum
 	}
 	return {
+		magnifier:magnifier,
 		detailScroll:detailScroll,
 		switchImg:switchImg,
 		recommend:recommend,

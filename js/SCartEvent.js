@@ -66,6 +66,9 @@ define(["jquery","jquery-cookie"],function ($){
 			expires:7,
 			path:'/'
 		})
+		
+		//全选按钮添加事件
+		
 	})
 	
 	return {
