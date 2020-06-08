@@ -30,15 +30,26 @@
 			thead{
 				background-color: white;
 				line-height: 65px;
+				p{
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+					border: 1px solid black;
+					text-align: center;
+					line-height: 20px;
+					font-weight: bold;
+					margin-right: 10px;
+					i{
+						font-size: 12px !important;
+						color: white;
+					}
+					.active{
+						color: black;
+					}
+				}
+				
 			}
-			input[type="checkbox"]{
-				// -webkit-appearance: none;//使元素看起来更像一个按钮s
-				display: inline-block;
-				width: 20px;
-				height: 20px;
-				margin-right: 5px;
-				vertical-align: middle;
-			}
+			
 			tbody{
 				tr{
 						background-color: white;
@@ -51,6 +62,23 @@
 					}
 					td:nth-child(1){
 						padding-right: 15px;
+						p{
+							display: inline-block;
+							width: 20px;
+							height: 20px;
+							border: 1px solid black;
+							text-align: center;
+							line-height: 20px;
+							font-weight: bold;
+							margin-right: 10px;
+							i{
+								font-size: 12px !important;
+								color: white;
+							}
+							.active{
+								color: black;
+							}
+						}
 					}
 					td:nth-child(2){
 						width: 365px;
@@ -118,6 +146,23 @@
 				}
 				td:nth-child(1){
 					text-align: center;
+					p{
+						display: inline-block;
+						width: 20px;
+						height: 20px;
+						border: 1px solid black;
+						text-align: center;
+						line-height: 20px;
+						font-weight: bold;
+						margin-right: 10px;
+						i{
+							font-size: 12px !important;
+							color: white;
+						}
+						.active{
+							color: black;
+						}
+					}
 				}
 				td:nth-child(2){
 					span{

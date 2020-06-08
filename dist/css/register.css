@@ -1,0 +1,201 @@
+html, body, ol, ul, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, form, input, select, textarea, table, td, tr, th, fieldset, span {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 12px; }
+
+fieldset, img {
+  border: none; }
+
+h1, h2, h3, h4, h5, h6, b, strong, i, em, u {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+img {
+  vertical-align: middle; }
+
+body {
+  background-color: #f7f7f7;
+  position: relative;
+  height: 1000px; }
+  body .content {
+    background-color: white;
+    width: 865px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 200px; }
+    body .content h1 {
+      display: inline-block; }
+      body .content h1 img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 50px;
+        top: 60px; }
+    body .content h2 {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      top: 140px; }
+    body .content .list .setPass {
+      display: none; }
+    body .content .list .info {
+      display: block;
+      width: 360px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 230px; }
+      body .content .list .info .country {
+        width: 360px;
+        height: 50px;
+        border: 1px solid black;
+        display: inline-block;
+        padding-left: 15px; }
+      body .content .list .info li:nth-child(2) {
+        line-height: 45px;
+        font-size: 12px;
+        color: #ccc; }
+      body .content .list .info li:nth-child(3) {
+        height: 50px;
+        border: 1px solid black; }
+        body .content .list .info li:nth-child(3) select {
+          display: inline-block;
+          height: 50px;
+          width: 75px;
+          border: none;
+          padding-left: 15px; }
+        body .content .list .info li:nth-child(3) input {
+          position: absolute;
+          display: inline-block;
+          height: 50px;
+          width: 275px;
+          border: none;
+          outline: none; }
+      body .content .list .info li:nth-child(4) {
+        line-height: 60px; }
+        body .content .list .info li:nth-child(4) span {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border: 1px solid black;
+          line-height: 20px;
+          text-align: center; }
+          body .content .list .info li:nth-child(4) span i {
+            font-size: 12px !important; }
+          body .content .list .info li:nth-child(4) span .active {
+            color: white; }
+        body .content .list .info li:nth-child(4) .active {
+          color: white; }
+      body .content .list .info li:nth-child(5) {
+        width: 360px;
+        height: 50px;
+        background-color: #4284ff;
+        line-height: 50px;
+        color: white;
+        font-size: 18px;
+        text-align: center; }
+    body .content .active .info {
+      display: none; }
+    body .content .active .setPass {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 360px;
+      top: 230px; }
+      body .content .active .setPass li {
+        margin-bottom: 17px;
+        width: 360px; }
+      body .content .active .setPass li:nth-child(2) {
+        border: 1px solid #dddddd;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between; }
+        body .content .active .setPass li:nth-child(2) input {
+          display: inline-block;
+          height: 30px;
+          padding-left: 10px;
+          border: none;
+          width: 240px; }
+        body .content .active .setPass li:nth-child(2) span {
+          display: inline-block;
+          border-left: 2px solid #dddddd;
+          height: 30px;
+          line-height: 30px;
+          width: 115px;
+          text-align: center;
+          color: #4f6bd6;
+          font-size: 14px;
+          font-weight: bold; }
+      body .content .active .setPass li:nth-child(3) {
+        border: 1px solid #dddddd; }
+        body .content .active .setPass li:nth-child(3) input {
+          display: block;
+          width: 350px;
+          height: 50px;
+          border: none;
+          margin-left: 10px;
+          outline: none; }
+      body .content .active .setPass li:nth-child(4) {
+        font-size: 12px;
+        color: #959595; }
+      body .content .active .setPass li:nth-child(5) {
+        height: 45px;
+        border: 1px solid #5585cd;
+        background-color: #428aff;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        line-height: 45px; }
+      body .content .active .setPass li:nth-child(6) {
+        color: #818181;
+        font-size: 12px;
+        line-height: 20px; }
+  body .foot {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 35px;
+    color: #919191; }
+    body .foot dt {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 360px;
+      bottom: 10px; }
+      body .foot dt i {
+        font-size: 12px !important;
+        margin-right: 15px; }
+      body .foot dt i:nth-child(2n-1) {
+        font-size: 18px !important; }
+    body .foot dd {
+      display: flex;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 740px;
+      font-size: 12px;
+      justify-content: space-between; }

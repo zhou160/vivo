@@ -35,6 +35,8 @@ header .headTop {
     margin-left: 30px; }
   header .headTop a {
     color: white; }
+    header .headTop a i {
+      font-size: 12px; }
 
 header .headBot {
   display: flex;

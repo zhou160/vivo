@@ -5,8 +5,9 @@ define(["jquery","jquery-cookie"],function ($){
 	function magnifier(){
 		// 鼠标移入放大区域显示
 		// console.log("放大镜")
-		$(".imgList").mouseenter(function (){
+		$(".imgList").mouseenter(function (e){
 			// console.log(123)
+			
 			$(".magnifier").css("display","block")
 			$(".imgList").mousemove(function (e){
 				console.log(e.pageX)
@@ -50,6 +51,7 @@ define(["jquery","jquery-cookie"],function ($){
 		$(".productList").on("mouseenter","li",function (){
 			console.log($(this).index())
 			$(".imgList li").removeClass("active").eq($(this).index()).addClass("active")
+			// $(".magnifier").html(`<img src = "">`)
 		})
 	}
 	
@@ -187,6 +189,7 @@ define(["jquery","jquery-cookie"],function ($){
 			}
 			$(".right b").css("display","block")
 			$(".right b").html(sum)
+			$(".headTop .list2").find("i").html(`(${sum})`)
 		}
 		return sum
 	}

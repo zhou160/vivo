@@ -54,12 +54,20 @@ img {
       .shopCart .SCartContent .tab thead {
         background-color: white;
         line-height: 65px; }
-      .shopCart .SCartContent .tab input[type="checkbox"] {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-right: 5px;
-        vertical-align: middle; }
+        .shopCart .SCartContent .tab thead p {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border: 1px solid black;
+          text-align: center;
+          line-height: 20px;
+          font-weight: bold;
+          margin-right: 10px; }
+          .shopCart .SCartContent .tab thead p i {
+            font-size: 12px !important;
+            color: white; }
+          .shopCart .SCartContent .tab thead p .active {
+            color: black; }
       .shopCart .SCartContent .tab tbody tr {
         background-color: white;
         padding: 20px 0px;
@@ -69,6 +77,20 @@ img {
         text-align: center; }
       .shopCart .SCartContent .tab tbody td:nth-child(1) {
         padding-right: 15px; }
+        .shopCart .SCartContent .tab tbody td:nth-child(1) p {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border: 1px solid black;
+          text-align: center;
+          line-height: 20px;
+          font-weight: bold;
+          margin-right: 10px; }
+          .shopCart .SCartContent .tab tbody td:nth-child(1) p i {
+            font-size: 12px !important;
+            color: white; }
+          .shopCart .SCartContent .tab tbody td:nth-child(1) p .active {
+            color: black; }
       .shopCart .SCartContent .tab tbody td:nth-child(2) {
         width: 365px; }
         .shopCart .SCartContent .tab tbody td:nth-child(2) dl {
@@ -116,6 +138,20 @@ img {
         height: 100px; }
       .shopCart .SCartContent tfoot td:nth-child(1) {
         text-align: center; }
+        .shopCart .SCartContent tfoot td:nth-child(1) p {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border: 1px solid black;
+          text-align: center;
+          line-height: 20px;
+          font-weight: bold;
+          margin-right: 10px; }
+          .shopCart .SCartContent tfoot td:nth-child(1) p i {
+            font-size: 12px !important;
+            color: white; }
+          .shopCart .SCartContent tfoot td:nth-child(1) p .active {
+            color: black; }
       .shopCart .SCartContent tfoot td:nth-child(2) span {
         margin-left: 30px; }
       .shopCart .SCartContent tfoot td:nth-child(4) p {

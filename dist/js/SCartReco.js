@@ -43,7 +43,7 @@ define(["jquery","jquery-cookie"],function ($){
 			newArr.forEach(function (item){
 				src += `
 					<tr data_id="${item.id}">
-						<td><input type="checkbox"/></td>
+						<td><p class="checks"><i class="iconfont icon-ziyuan active"></i></p></td>
 						<td>
 							<dl>
 								<dt><img src="${item.images[0].smallPic}"></dt>
@@ -58,9 +58,9 @@ define(["jquery","jquery-cookie"],function ($){
 							<span class="num">${item.num}</span>
 							<span class="add">+</span>
 						</td>
-						<td>0.00</td>
+						<td class="discount">0.00</td>
 						<td>${item.salePrice}</td>
-						<td>${item.salePrice*item.num}</td>
+						<td class="sale">${item.salePrice*item.num}</td>
 						<td>
 							<span>加入收藏夹</span>
 							<span class=>删除</span>
