@@ -120,17 +120,34 @@ body{
 						padding-left: 10px;
 						border: none;
 						width: 240px;
+						outline: none;
 					}
 					span{
-						display: inline-block;
 						border-left: 2px solid #dddddd;
 						height: 30px;
 						line-height: 30px;
 						width: 115px;
 						text-align: center;
+						font-weight: bold;
+						cursor: pointer;
+					}
+					span:nth-of-type(1){
 						color: #4f6bd6;
 						font-size: 14px;
-						font-weight: bold;
+						display: block;
+					}
+					span:nth-of-type(2){
+						font-size: 12px;
+						color: #ccc;
+						display: none;
+					}
+				}
+				.spa{
+					span:nth-of-type(1){
+						display: none !important;
+					}
+					span:nth-of-type(2){
+						display: block !important;
 					}
 				}
 				li:nth-child(3){

@@ -19,4 +19,5 @@ require.config({
 require(["registerEvent"],function(registerEvent){
 	registerEvent.agree()
 	registerEvent.Next()
+	registerEvent.verification()
 })

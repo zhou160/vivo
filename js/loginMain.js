@@ -2,7 +2,7 @@ require.config({
 	paths:{
 		"jquery": "jquery-1.10.1.min",
 		"jquery-cookie": "jquery.cookie",
-		"registerEvent":"registerEvent"
+		"loginEvents":"loginEvents"
 	},
     shim: {
         //jquery.cookie 是依赖于 jquery开发
@@ -16,8 +16,6 @@ require.config({
 })
 
 //调用函数实现对应的功能
-require(["registerEvent"],function(registerEvent){
-	registerEvent.agree()
-	registerEvent.Next()
-	registerEvent.verification()
+require(["loginEvents"],function(loginEvents){
+	loginEvents.verification()
 })

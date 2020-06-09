@@ -136,17 +136,28 @@ body {
           height: 30px;
           padding-left: 10px;
           border: none;
-          width: 240px; }
+          width: 240px;
+          outline: none; }
         body .content .active .setPass li:nth-child(2) span {
-          display: inline-block;
           border-left: 2px solid #dddddd;
           height: 30px;
           line-height: 30px;
           width: 115px;
           text-align: center;
+          font-weight: bold;
+          cursor: pointer; }
+        body .content .active .setPass li:nth-child(2) span:nth-of-type(1) {
           color: #4f6bd6;
           font-size: 14px;
-          font-weight: bold; }
+          display: block; }
+        body .content .active .setPass li:nth-child(2) span:nth-of-type(2) {
+          font-size: 12px;
+          color: #ccc;
+          display: none; }
+      body .content .active .setPass .spa span:nth-of-type(1) {
+        display: none !important; }
+      body .content .active .setPass .spa span:nth-of-type(2) {
+        display: block !important; }
       body .content .active .setPass li:nth-child(3) {
         border: 1px solid #dddddd; }
         body .content .active .setPass li:nth-child(3) input {
