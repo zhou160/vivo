@@ -8,6 +8,7 @@ define(["jquery"],function ($){
 			$(".productList").css("width",width*imgs.length)
 			var bigImg = ''
 			var smallImg = ''
+			var bigImage = ''//用于存放放大图片
 			//content处大图和小图
 			// console.log(li.corner)
 			if(li.corner){
@@ -17,8 +18,10 @@ define(["jquery"],function ($){
 				// console.log(item)
 				if(index == 0){
 					bigImg += `<li class="active"><img src="${item.hdPic}" class="img1"></li>`
+					bigImage += `<li class="active"><img src="${item.hdPic}"></li>`
 				}else{
 					bigImg += `<li><img src="${item.hdPic}" class="img1"></li>`
+					bigImage += `<li><img src="${item.hdPic}"></li>`
 				}
 				smallImg += `
 				<li>
@@ -41,6 +44,7 @@ define(["jquery"],function ($){
 			// console.log()
 			$(".footRight").find("dl").html(foot)
 			//其他地方数据
+			$(".bigImg").html(bigImage)
 			$(".imgList").html(bigImg)
 			$(".productList").html(smallImg)
 			$(".detaileRight h1").attr("data_id",`${li.id}`).html(li.skuName)
