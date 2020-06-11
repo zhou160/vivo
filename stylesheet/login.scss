@@ -17,6 +17,13 @@ body{
 			height: 700px;
 			background-color: white;
 			padding:0px 30px;
+			h1{
+				display: block;
+			}
+			h2{
+				display: none;
+			}
+			
 			li{
 				margin-bottom: 15px;
 				text-align: center;
@@ -61,50 +68,81 @@ body{
 				}
 			}
 			li:nth-child(5){
-				border: 1px solid #dddddd;
-				padding: 10px 0;
-				display: flex;
-				justify-content: space-between;
-				input{
-					display: inline-block;
-					height: 30px;
-					padding-left: 10px;
-					border: none;
-					width: 240px;
-					outline: none;
+				h1{
+					border: 1px solid #dddddd;
+					padding: 10px 0;
+					display: flex;
+					justify-content: space-between;
+					input{
+						display: inline-block;
+						height: 30px;
+						padding-left: 10px;
+						border: none;
+						width: 240px;
+						outline: none;
+					}
+					span{
+						border-left: 2px solid #dddddd;
+						height: 30px;
+						line-height: 30px;
+						width: 115px;
+						text-align: center;
+						font-weight: bold;
+						cursor: pointer;
+					}
+					span:nth-of-type(1){
+						color: #4f6bd6;
+						font-size: 14px;
+						display: block;
+					}
+					span:nth-of-type(2){
+						font-size: 12px;
+						color: #ccc;
+						display: none;
+					}
 				}
-				span{
-					border-left: 2px solid #dddddd;
-					height: 30px;
-					line-height: 30px;
-					width: 115px;
-					text-align: center;
-					font-weight: bold;
-					cursor: pointer;
-				}
-				span:nth-of-type(1){
-					color: #4f6bd6;
-					font-size: 14px;
-					display: block;
-				}
-				span:nth-of-type(2){
-					font-size: 12px;
-					color: #ccc;
-					display: none;
+				h2{
+					border: 1px solid #dddddd;
+					// padding: 10px 0;
+					position: absolute;
+					top: 0px;
+					input{
+						display: block;
+						text-align: left;
+						height: 50px;
+						width: 340px;
+						padding-left: 10px;
+						border: none;
+						outline: none;
+					}
 				}
 			}
 			.spa{
-				span:nth-of-type(1){
-					display: none !important;
-				}
-				span:nth-of-type(2){
-					display: block !important;
+				h1{
+					span:nth-of-type(1){
+						display: none !important;
+					}
+					span:nth-of-type(2){
+						display: block !important;
+					}
 				}
 			}
 			li:nth-child(6){
 				text-align: right;
 				font-size: 12px;
 				color: #5d5e58;
+				h2{
+					// display: inline-block;
+					float: left;
+					text-align: left;
+					width: 235px;
+					font-size: 12px;
+					color: #4287ff;
+					// line-height: 46px;
+					position: absolute;
+					top:0px;
+					cursor: pointer;
+				}
 				p{
 					display: inline-block;
 					text-align: left;
@@ -170,6 +208,15 @@ body{
 					color: #78a2ff;
 					font-size: 26px;
 					margin-right: 22px;
+				}
+			}
+			// 账号密码登录
+			.loginPass{
+				h1{
+					display: none;
+				}
+				h2{
+					display: block;
 				}
 			}
 		}

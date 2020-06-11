@@ -59,6 +59,7 @@ define(["jquery"],function ($){
 			})
 			$(".setPass li").eq(4).click(function (){
 				console.log(random)
+				console.log($(".setPass li").eq(2).find("input").val())
 				var reg = /[a-z0-1{8,16}]/i
 				if($(".setPass li").eq(1).find("input").val() != random){
 					$(".setPass li").eq(3).html("验证码错误").css("color","red")
@@ -68,6 +69,35 @@ define(["jquery"],function ($){
 					$(".setPass li").eq(3).html("密码必须为8-16位字母和数字组合").css("color","red")
 				}else{
 					$(".setPass li").eq(3).html("密码必须为8-16位字母和数字组合").css("color","#959595")
+					var url = `../php/register.php?tel=${$(".info li").eq(2).find("input").val()}&psw=${$(".setPass li").eq(2).find("input").val()}`
+					// console.log(url)
+					
+					api(url).then(function (data){
+						console.log(data)
+						data = JSON.parse(data)
+						if(data.code == 200){
+							$(".setPass li").eq(3).html("注册成功").css("color","green")
+							window.location.href = "login.html"
+						}else{
+							$(".setPass li").eq(3).html(`${data.msg}`).css("color","red")
+							// console.log("网络错误")
+						}
+					})
+				}
+			})
+		})
+	}
+	
+	function api(url){
+	return new Promise(function (resolve,reject){
+			$.ajax({
+				type:"get",
+				url:url,
+				success:function (body){
+					resolve(body)
+				},
+				error:function (){
+					reject(err)
 				}
 			})
 		})

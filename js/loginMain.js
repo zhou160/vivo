@@ -18,4 +18,7 @@ require.config({
 //调用函数实现对应的功能
 require(["loginEvents"],function(loginEvents){
 	loginEvents.verification()
+	loginEvents.loginPass()
+	loginEvents.loginUName()
+	loginEvents.verif()
 })

@@ -3,19 +3,33 @@ define(["jquery","jquery-cookie"],function ($){
 	
 	// 放大图片
 	function magnifier(){
-		// 鼠标移入放大区域显示
-		// console.log("放大镜")
-		$(".imgList").mouseenter(function (e){
-			// console.log(123)
-			
-			$(".magnifier").css("display","block")
-			$(".imgList").mousemove(function (e){
-				console.log(e.pageX)
-			})
-		}).mouseleave(function (){
-			$(".magnifier").css("display","none")
+		$(".imgList").mouseenter(function (){
+			$(".magnifier").add(".bigImg").css("display","block")
+			// $(".imgList")
+		}).mousemove(function (ev){
+				$(".magnifier").css({
+					left:ev.clientX-$(".imgList").offset().left-$(".magnifier").width()/2,
+					top:ev.clientY-$(".imgList").offset().top-$(".magnifier").height()/2+$(window).scrollTop()
+				})
+				$(".bigImg").find(".active").css({
+					left:-1.5*(ev.clientX-$(".imgList").offset().left-$(".magnifier").width()/2),
+					top:-1.5*(ev.clientY-$(".imgList").offset().top-$(".magnifier").height()/2+$(window).scrollTop())
+				})
+			}).mouseleave(function (){
+			$(".magnifier").add(".bigImg").css("display","none")
 		})
 	}
+	
+	//用于限制出入界
+	function range(iCur, iMin, iMax){
+	           if(iCur <= iMin){
+	               return iMin;
+	           }else if(iCur >= iMax){
+	               return iMax;
+	           }else{
+	               return iCur;
+	           }
+	       }
 	
 	//鼠标滚动控制左侧大图停留以及评论区头部停留及显示和隐藏
 	function detailScroll(){
@@ -49,9 +63,10 @@ define(["jquery","jquery-cookie"],function ($){
 	//鼠标移入换图
 	function switchImg(){
 		$(".productList").on("mouseenter","li",function (){
-			console.log($(this).index())
+			// console.log($(this).index())
 			$(".imgList li").removeClass("active").eq($(this).index()).addClass("active")
-			// $(".magnifier").html(`<img src = "">`)
+			$(".detaileRight .bigImg li").removeClass("active").eq($(this).index()).addClass("active")
+			console.log(123)
 		})
 	}
 	

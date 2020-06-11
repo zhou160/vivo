@@ -54,9 +54,9 @@ define(["jquery","jquery-cookie"],function ($){
 	
 		// 给删除按钮添加事件
 		$(".tab tbody").on("click",".del",function (){
-			console.log("删除成功")
+			// console.log("删除成功")
 			var id = $(this).closest("tr").remove().attr("data_id")
-			console.log(id)
+			// console.log(id)
 			var cookieArr = JSON.parse($.cookie("goods"))
 			for(var i=0;i<cookieArr.length;i++){
 				if(cookieArr[i].id == id){

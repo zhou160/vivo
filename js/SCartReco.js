@@ -63,7 +63,7 @@ define(["jquery","jquery-cookie"],function ($){
 						<td class="sale">${item.salePrice*item.num}</td>
 						<td>
 							<span>加入收藏夹</span>
-							<span class=>删除</span>
+							<span class="del">删除</span>
 						</td>
 					</tr>
 				`
